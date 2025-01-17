@@ -1,0 +1,1 @@
+Toggle the ghost status of the target combatants

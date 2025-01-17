@@ -1,0 +1,1 @@
+Toggle the allied status of a monster in initiative

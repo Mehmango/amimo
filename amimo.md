@@ -1,0 +1,1 @@
+Automate the current monster's movement and attacks
