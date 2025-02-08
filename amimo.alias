@@ -1139,7 +1139,7 @@ def basic():
                 for speedType in speeds:
                     speeds.update({ speedType: int(speeds[speedType] / 2) })
                 actions.append(basicActions.stand)
-                actions.append(f'i re {globals.currentMonster.name} Prone')
+                globals.currentMonster.remove_effect('Prone')
             elif 'restrained' in effect.name.lower():
                 for speedType in speeds:
                     speeds.update({ speedType: 0 })
@@ -1183,7 +1183,7 @@ baseTitle = "**:space_invader: AMIMO: Automated Monsters Integrating !map and OT
 baseDesc = ""
 baseFooter = "!amimo help | By @mehmango"
 
-maxAutomatedMonsters = 6
+maxAutomatedMonsters = 5
 if 'o' in argList or 'aoo' in argList:
     maxAutomatedMonsters = 1
 elif '-limit' in argList and str(args.last('limit')).isnumeric():
